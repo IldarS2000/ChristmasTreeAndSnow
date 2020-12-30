@@ -12,14 +12,14 @@
 #include <random>
 
 
-const size_t HEIGHT = 48;
-const size_t WIDTH = 210;
-const int64_t SLEEP_PER_FRAME = 10;
+constexpr size_t HEIGHT = 48;
+constexpr size_t WIDTH = 210;
+constexpr int64_t SLEEP_PER_FRAME = 10;
 
 std::random_device rd;
 std::mt19937 generator(rd());
 std::uniform_int_distribution<> distribution(1, 100);
-const size_t SNOWFLAKE_CHANCE = 3;
+constexpr size_t SNOWFLAKE_CHANCE = 3;
 
 
 std::string make_snow_row()
